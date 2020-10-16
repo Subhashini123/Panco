@@ -1,0 +1,2 @@
+com.woopra.android.sdk
+string app_name

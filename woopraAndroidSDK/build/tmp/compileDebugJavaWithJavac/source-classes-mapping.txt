@@ -1,0 +1,21 @@
+com/woopra/tracking/android/WoopraClientInfo.java
+ com.woopra.tracking.android.WoopraClientInfo
+com/woopra/tracking/android/Woopra.java
+ com.woopra.tracking.android.Woopra
+com/woopra/tracking/android/Constants.java
+ com.woopra.tracking.android.Constants
+com/woopra/tracking/android/Utils.java
+ com.woopra.tracking.android.Utils
+com/woopra/tracking/android/WoopraPing.java
+ com.woopra.tracking.android.WoopraPing
+com/woopra/tracking/android/WoopraTracker.java
+ com.woopra.tracking.android.WoopraTracker
+ com.woopra.tracking.android.WoopraTracker$1
+com/woopra/tracking/android/WoopraVisitor.java
+ com.woopra.tracking.android.WoopraVisitor
+com/woopra/android/sdk/BuildConfig.java
+ com.woopra.android.sdk.BuildConfig
+com/woopra/tracking/android/WoopraEvent.java
+ com.woopra.tracking.android.WoopraEvent
+com/woopra/tracking/android/WoopraIdentify.java
+ com.woopra.tracking.android.WoopraIdentify
