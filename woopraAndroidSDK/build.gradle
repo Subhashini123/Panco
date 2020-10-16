@@ -1,0 +1,30 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.1"
+
+    defaultConfig {
+        minSdkVersion 9
+        targetSdkVersion 30
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        staging {
+            initWith debug
+            buildConfigField 'String', 'BASE_URL', '\"https://staging.plano.co/planoapi/v1/\"'
+        }
+        uat {
+            initWith debug
+            buildConfigField 'String', 'BASE_URL', '\"https://uat.plano.co/planoapi/v1/\"'
+        }
+        production {
+            initWith release
+            buildConfigField 'String', 'BASE_URL', '\"https://www.plano.co/planoapi/v1/\"'
+        }
+    }
+}
