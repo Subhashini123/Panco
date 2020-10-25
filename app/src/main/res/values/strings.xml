@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">Plano</string>
+    <string name="open">Plano</string>
+    <string name="close">Plano</string>
+    <string name="title_activity_main2">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="subscription">Subscription</string>
+    <string name="health">Health</string>
+    <string name="notification">Notification</string>
+    <string name="help">Help</string>
+    <string name="feedback">Feedback</string>
+    <string name="settings">Settings</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="welcome_to_plano">Welcome to plano!</string>
+    <string name="add_a_child_s_profile_to_setup_the_controls_and_start_the_child_mode_in_this_device_or_any_other_device_to_start_monitoring_the_child_s_activities">Add a child’s profile to setup the controls and start the ‘Child mode’ in this device or any other device to start monitoring the Child’s activities.</string>
+    <string name="child_s_activity_report">Child\'s activity report</string>
 </resources>
