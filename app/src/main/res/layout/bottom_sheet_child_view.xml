@@ -23,8 +23,23 @@
         android:layout_height="97dp"
         android:background="@drawable/gradient_blue_purple"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enrique_john"
+        android:textStyle="normal"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/view3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view" />
 
     <TextView
         android:id="@+id/textView4"
@@ -60,23 +75,25 @@
     <View
         android:id="@+id/view2"
         android:layout_width="0dp"
-        android:layout_height="@dimen/dp2"
+        android:layout_height="@dimen/dp5"
         android:layout_marginTop="94dp"
         android:background="@drawable/rect_more_curve_yellow"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/view3"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="invisible"/>
 
     <View
         android:id="@+id/view3"
         android:layout_width="0dp"
-        android:layout_height="@dimen/dp2"
+        android:layout_height="@dimen/dp5"
         android:layout_marginTop="94dp"
         android:background="@drawable/rect_more_curve_yellow"
         app:layout_constraintEnd_toStartOf="@+id/view2"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="visible"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
