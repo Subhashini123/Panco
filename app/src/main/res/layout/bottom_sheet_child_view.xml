@@ -5,6 +5,7 @@
     android:id="@+id/bottomSheet"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary1"
     app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
 
     <androidx.cardview.widget.CardView
@@ -142,17 +143,17 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="21dp"
-                android:textColor="#ffffff"
+                android:textColor="@color/white"
                 android:textSize="20sp"
                 android:textStyle="normal"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/view16"
-                tools:text="Screen time" />
+                android:text="Screen time" />
 
             <View
                 android:id="@+id/view17"
-                android:layout_width="match_parent"
-                android:layout_height="300dp"
+                android:layout_width="0dp"
+                android:layout_height="389dp"
                 android:layout_marginStart="6dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="6dp"
@@ -172,8 +173,7 @@
                 android:textStyle="normal"
                 android:textSize="12sp"
                 android:textColor="#000000"
-                tools:text="@string/todays_date"
-                android:text="TextView"
+                android:text="@string/todays_date"
                 app:layout_constraintStart_toStartOf="@+id/view17"
                 app:layout_constraintTop_toTopOf="@+id/view17" />
 
@@ -452,6 +452,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
+                android:layout_marginRight="@dimen/dp14"
                 android:textStyle="normal"
                 android:textSize="10sp"
                 android:textColor="@color/black"
@@ -464,6 +465,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Usage breakdown"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/grey"
                 app:layout_constraintStart_toStartOf="@+id/barChart_day"
                 app:layout_constraintTop_toBottomOf="@+id/textView20" />
         </androidx.constraintlayout.widget.ConstraintLayout>
