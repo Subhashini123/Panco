@@ -10,8 +10,10 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
+import co.plano.ui.BottomSheetDialog
 import co.plano.ui.fragment.*
 import kotlinx.android.synthetic.main.app_bar_act_dashboard.*
+import kotlinx.android.synthetic.main.fragment_home.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -21,6 +23,8 @@ class MainActivity : AppCompatActivity() {
 
         val drawerLayout = findViewById<View>(R.id.drawerLayout) as DrawerLayout
         val content = findViewById<View>(R.id.content) as RelativeLayout
+
+
 
         val actionBarDrawerToggle: ActionBarDrawerToggle =
             object : ActionBarDrawerToggle(
