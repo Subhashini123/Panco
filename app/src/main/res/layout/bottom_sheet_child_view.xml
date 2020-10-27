@@ -118,10 +118,10 @@
             <View
                 android:id="@+id/view16"
                 android:layout_width="0dp"
-                android:layout_height="0dp"
+                android:layout_height="150dp"
                 android:background="@drawable/rect_curve_primary1"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -134,7 +134,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/barChart" />
+                app:layout_constraintTop_toBottomOf="@+id/barChart_day" />
 
             <TextView
                 android:id="@+id/textView12"
@@ -142,20 +142,19 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="21dp"
-                android:layout_marginBottom="20dp"
-                android:text="Most used"
-                android:textColor="@color/white"
+                android:textColor="#ffffff"
                 android:textSize="20sp"
-                app:layout_constraintBottom_toTopOf="@+id/view17"
+                android:textStyle="normal"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/view16" />
+                app:layout_constraintTop_toTopOf="@+id/view16"
+                tools:text="Screen time" />
 
             <View
                 android:id="@+id/view17"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
                 android:layout_marginStart="6dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginEnd="6dp"
                 android:background="@drawable/rect_curve_primary1"
                 android:backgroundTint="@color/white"
@@ -219,7 +218,9 @@
                 android:id="@+id/view5"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/dp150"
+                android:layout_marginStart="6dp"
                 android:layout_marginTop="20dp"
+                android:layout_marginEnd="6dp"
                 android:background="@drawable/rect_curve_primary1"
                 android:backgroundTint="@color/white"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -393,7 +394,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
                 android:layout_marginTop="5dp"
-                android:text="TextView"
+                android:text="02"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dp20"
+                android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="@+id/view17"
                 app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
@@ -401,7 +405,9 @@
                 android:id="@+id/textView19"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView"
+                android:text="m"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/dp20"
                 app:layout_constraintBottom_toBottomOf="@+id/textView18"
                 app:layout_constraintStart_toEndOf="@+id/textView18"
                 app:layout_constraintTop_toTopOf="@+id/textView18" />
@@ -410,7 +416,9 @@
                 android:id="@+id/textView17"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView"
+                android:text="h"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/dp20"
                 app:layout_constraintBottom_toBottomOf="@+id/textView15"
                 app:layout_constraintStart_toEndOf="@+id/textView15"
                 app:layout_constraintTop_toTopOf="@+id/textView15" />
@@ -420,13 +428,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"
-                android:text="TextView"
+                android:text="30"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dp20"
+                android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="@+id/textView17"
                 app:layout_constraintStart_toEndOf="@+id/textView17"
                 app:layout_constraintTop_toTopOf="@+id/textView17" />
 
             <com.github.mikephil.charting.charts.BarChart
-                android:id="@+id/barChart"
+                android:id="@+id/barChart_day"
                 android:layout_width="0dp"
                 android:layout_height="200dp"
                 android:layout_marginStart="13dp"
@@ -441,28 +452,20 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="TextView"
-                app:layout_constraintEnd_toEndOf="@+id/barChart"
-                app:layout_constraintTop_toBottomOf="@+id/barChart" />
-
-            <TextView
-                android:id="@+id/textView21"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="12dp"
-                android:text="TextView"
-                app:layout_constraintBottom_toBottomOf="@+id/switch1"
-                app:layout_constraintEnd_toStartOf="@+id/switch1"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/switch1" />
+                android:textStyle="normal"
+                android:textSize="10sp"
+                android:textColor="@color/black"
+                android:text="Updated today at 6.00pm"
+                app:layout_constraintEnd_toEndOf="@+id/barChart_day"
+                app:layout_constraintTop_toBottomOf="@+id/barChart_day" />
 
             <Switch
                 android:id="@+id/switch1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Switch"
-                app:layout_constraintTop_toBottomOf="@+id/textView20"
-                tools:layout_editor_absoluteX="94dp" />
+                android:text="Usage breakdown"
+                app:layout_constraintStart_toStartOf="@+id/barChart_day"
+                app:layout_constraintTop_toBottomOf="@+id/textView20" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
